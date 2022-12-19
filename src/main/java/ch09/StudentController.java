@@ -42,8 +42,8 @@ public class StudentController extends HttpServlet {
 			.forward(request, response);
 		} else {
 			switch(action) {
-			  case "list": view = list(request, response);
-			  case "insert": view = insert(request, response); //request와 response 객체를 매개변수로 넘겨준다. 		  
+			  case "list": view = list(request, response); break;
+			  case "insert": view = insert(request, response); break; //request와 response 객체를 매개변수로 넘겨준다. 		  
 			} 
 			
 			//getServletContext(): ServletContext를 얻어옴
